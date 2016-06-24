@@ -30,6 +30,7 @@ en:
           title: Dashboard
           draft_widget: Draft Pages
           reviewed_widget: Reviewed Pages
+          pages_ready_for_review: Pages Ready For Review
           updated_pages: Recently Updated Pages
 
         sites:
@@ -99,8 +100,8 @@ en:
       cms:
         pages:
           form: &pages_form
-            review: Approve
-            reviewed: Reviewed
+            review: Ready For Review
+            reviewed: Ready For Review
             schedule: Publish Date
             scheduled: Scheduled
             publish: Publish Now

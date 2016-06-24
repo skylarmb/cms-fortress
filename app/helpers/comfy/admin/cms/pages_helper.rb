@@ -1,7 +1,9 @@
 module Comfy::Admin::Cms::PagesHelper
   def page_actions(page)
     events = page.aasm.events(permitted: true).map(&:name)
+    byebug
     events.select! do |event|
+      byebug
       can?(:manage, 'contents.page.' + event.to_s)
     end
     events
