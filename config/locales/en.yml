@@ -10,7 +10,6 @@ en:
       logout: Logout
       create: Create
       update: Update
-      update_draft: Update Draft
       delete: Delete
       edit: Edit
       are_you_sure: Are you sure?
@@ -108,6 +107,7 @@ en:
             publish: Publish Now
             published: Published
             draft: save as draft
+            update_draft: Update Draft
             drafted: Draft
             reset: Reset to Draft
 

@@ -48,7 +48,7 @@
   - if (@page.published? && can?(:manage, 'contents.page.publish')) || @page.new_record?
     = form.submit t(@page.new_record?? '.create' : '.update'), :class => 'btn btn-primary'
   - elsif !@page.published? && can?(:manage, 'contents.page.draft')
-    = form.submit t('.update_draft')
+    = form.submit t('.update_draft'), :class => 'btn btn-primary'
 
   = link_to t('.cancel'), comfy_admin_cms_site_pages_path, :class => 'btn btn-link'
 
