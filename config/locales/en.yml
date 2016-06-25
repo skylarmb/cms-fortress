@@ -10,6 +10,7 @@ en:
       logout: Logout
       create: Create
       update: Update
+      update_draft: Update Draft
       delete: Delete
       edit: Edit
       are_you_sure: Are you sure?
