@@ -16,7 +16,13 @@
       %span.label.label-success
         =t('.published')
   %h2= t('.title')
-
+  -if !@page.published?
+    %h3.pull-right
+      %span.label.label-warning
+        - if @page.has_published_revision?
+          = "Publicly visible: Revision from #{@page.latest_published_revision.created_at.in_time_zone(Time.zone.name).to_formatted_s(:long)}"
+        - else
+          = "Not publicly visible"
 - content_for :right_column do
   = render 'comfy/admin/cms/sites/mirrors', :object => @page
 
